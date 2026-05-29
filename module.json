@@ -2,7 +2,7 @@
   "id": "v5-live-overlay",
   "title": "V5 Live Overlay",
   "description": "Overlay transparente para OBS com Vitalidade, Força de Vontade e Fome para Vampire: The Masquerade 5e no Foundry VTT.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Angelo Magno"
