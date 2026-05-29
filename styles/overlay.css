@@ -1,0 +1,138 @@
+/*
+ * V5 Live Overlay - CSS
+ * Fundo transparente para OBS.
+ */
+
+body.v5-live-overlay-mode {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+body.v5-live-overlay-mode #interface,
+body.v5-live-overlay-mode #ui-top,
+body.v5-live-overlay-mode #ui-left,
+body.v5-live-overlay-mode #ui-middle,
+body.v5-live-overlay-mode #ui-bottom,
+body.v5-live-overlay-mode #ui-right,
+body.v5-live-overlay-mode #board,
+body.v5-live-overlay-mode #sidebar,
+body.v5-live-overlay-mode #navigation,
+body.v5-live-overlay-mode #controls,
+body.v5-live-overlay-mode #hotbar,
+body.v5-live-overlay-mode #players,
+body.v5-live-overlay-mode #pause,
+body.v5-live-overlay-mode #logo,
+body.v5-live-overlay-mode #notifications,
+body.v5-live-overlay-mode .vtt.game,
+body.v5-live-overlay-mode .app.window-app {
+  display: none !important;
+}
+
+#v5-live-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  pointer-events: none;
+  background: transparent;
+  box-sizing: border-box;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.v5-player-card {
+  width: 360px;
+  box-sizing: border-box;
+  padding: 10px 14px 12px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 18px rgba(140, 0, 0, 0.35),
+    inset 0 0 12px rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(2px);
+}
+
+.v5-player-name {
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.v5-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+  margin: 3px 0;
+}
+
+.v5-stat-label {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.v5-hunger-row .v5-stat-label {
+  color: #ffdede;
+}
+
+.v5-marks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  min-width: 115px;
+}
+
+.v5-box {
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-sizing: border-box;
+  background: transparent;
+  box-shadow: 1px 1px 3px #000000;
+}
+
+.v5-box-filled {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.v5-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgba(85, 85, 85, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.85);
+  box-shadow: 1px 1px 3px #000000;
+}
+
+.v5-dot-filled {
+  background: #d60000;
+  box-shadow:
+    0 0 7px rgba(255, 0, 0, 0.95),
+    1px 1px 3px #000000;
+}
+
+.v5-overlay-warning {
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #000000;
+}
